@@ -1,0 +1,3 @@
+FROM rocker/rstudio
+
+COPY . .

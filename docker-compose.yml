@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  rstudio:
+    build: .
+    ports:
+      - "127.0.0.1:8787:8787"
+    environment:
+      - DISABLE_AUTH=true
+    volumes:
+      - ./src:/home/rstudio
